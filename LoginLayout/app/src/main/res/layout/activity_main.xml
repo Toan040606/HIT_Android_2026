@@ -93,16 +93,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
                         android:text="Email" />
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@drawable/btn_continue_bg"
+                        android:layout_height="wrap_content"
                         android:hint="Email"
-                        android:padding="10dp"
-                        android:textSize="15dp" />
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -114,17 +117,21 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
                         android:text="Password" />
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:background="@drawable/btn_continue_bg"
+                        android:layout_height="wrap_content"
                         android:hint="Password"
-                        android:inputType="textPassword"
-                        android:padding="10dp"
-                        android:textSize="15dp" />
+                        app:endIconMode="password_toggle"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -146,9 +153,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
+                    android:text="Forgot Password ?"
                     android:textColor="#4D81E7"
-                    android:text="Forgot Password ?" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -185,8 +192,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:textColor="#DCDDDE"
-                        android:text="Or" />
+                        android:text="Or"
+                        android:textColor="#DCDDDE" />
 
                     <View
                         android:layout_width="0dp"
