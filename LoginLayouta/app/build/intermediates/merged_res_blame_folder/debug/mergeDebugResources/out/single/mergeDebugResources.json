@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_btn_continue_bg.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/btn_continue_bg.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/xml_backup_rules.xml.flat",
+        "source": "root.loginlayout.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/layout_activity_main.xml.flat",
+        "source": "root.loginlayout.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/xml_data_extraction_rules.xml.flat",
+        "source": "root.loginlayout.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_google_icon.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/google_icon.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_eye_off.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/eye_off.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_facebook_icon.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/facebook_icon.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_logo_icon.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/logo_icon.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_white_bg_10dp.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/white_bg_10dp.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "root.loginlayout.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_btn_bg.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/btn_bg.xml"
+    },
+    {
+        "merged": "root.loginlayout.app-debug-35:/drawable_bluetolightblue_bg_gradient.xml.flat",
+        "source": "root.loginlayout.app-main-37:/drawable/bluetolightblue_bg_gradient.xml"
+    }
+]
