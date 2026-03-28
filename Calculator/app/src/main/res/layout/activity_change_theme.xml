@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A89F94"
+    android:orientation="vertical"
+    android:paddingTop="70dp"
+    tools:context=".ChangeTheme">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:text="@string/theme_change"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/black_amp_white"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/black_white_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/amber"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/amber_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/blue_amp_gray"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/blue_gray_icon" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/cyan"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/cyan_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/green"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/green_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/gray"
+                android:textAlignment="center"
+                app:drawableTopCompat="@drawable/gray_icon" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

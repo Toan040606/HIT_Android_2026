@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="theme_change">Theme Change</string>
+    <string name="black_amp_white"><![CDATA[Black & White]]></string>
+    <string name="amber">Amber</string>
+    <string name="blue_amp_gray"><![CDATA[Blue & Gray]]></string>
+    <string name="cyan">Cyan</string>
+    <string name="green">Green</string>
+    <string name="gray">Gray</string>
+</resources>
