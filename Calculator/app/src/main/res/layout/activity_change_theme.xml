@@ -5,16 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A89F94"
+    android:background="?attr/colorBackground"
     android:orientation="vertical"
-    android:paddingTop="70dp"
+    android:paddingTop="50dp"
     tools:context=".ChangeTheme">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/left_angle"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="25dp"
+        android:textColor="?attr/colorOnBackground"
         android:text="@string/theme_change"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -30,6 +39,7 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/baw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -38,6 +48,7 @@
                 app:drawableTopCompat="@drawable/black_white_icon" />
 
             <TextView
+                android:id="@+id/amber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -46,6 +57,7 @@
                 app:drawableTopCompat="@drawable/amber_icon" />
 
             <TextView
+                android:id="@+id/bag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -57,6 +69,7 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/cyan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -65,6 +78,7 @@
                 app:drawableTopCompat="@drawable/cyan_icon" />
 
             <TextView
+                android:id="@+id/green"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
@@ -73,6 +87,7 @@
                 app:drawableTopCompat="@drawable/green_icon" />
 
             <TextView
+                android:id="@+id/gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"

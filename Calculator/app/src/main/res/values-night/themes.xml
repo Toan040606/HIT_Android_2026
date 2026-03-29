@@ -1,7 +1,63 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Calculator" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Theme.Calculator.Gray" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorBackground">#1F2937</item>
+        <item name="colorDisplayBackground">#111827</item>
+        <item name="colorOnBackground">#6B7280</item>
+        <item name="colorText">#000000</item>
+        <item name="colorButtonImportant">#374151</item>
+        <item name="colorButtonNormal">#4B5563</item>
+        <item name="colorNumber">#6B7280</item>
     </style>
+
+    <style name="Theme.Calculator.Amber" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorBackground">#A89F94</item>
+        <item name="colorDisplayBackground">#A89085</item>
+        <item name="colorOnBackground">#352D2A</item>
+        <item name="colorText">#352D2A</item>
+        <item name="colorButtonImportant">#E49E7E</item>
+        <item name="colorButtonNormal">#97877F</item>
+        <item name="colorNumber">#DFD9D4</item>
+    </style>
+
+    <style name="Theme.Calculator.BlackAndWhite" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorBackground">#EEEEEE</item>
+        <item name="colorDisplayBackground">#E0E0E0</item>
+        <item name="colorOnBackground">#1E1D1D</item>
+        <item name="colorText">#000000</item>
+        <item name="colorButtonImportant">#757575</item>
+        <item name="colorButtonNormal">#9E9E9E</item>
+        <item name="colorNumber">#BDBDBD</item>
+    </style>
+
+    <style name="Theme.Calculator.BlueAndGray" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorBackground">#37474F</item>
+        <item name="colorDisplayBackground">#0C151A</item>
+        <item name="colorOnBackground">#90A4AE</item>
+        <item name="colorText">#000000</item>
+        <item name="colorButtonImportant">#263238</item>
+        <item name="colorButtonNormal">#546E7A</item>
+        <item name="colorNumber">#90A4AE</item>
+    </style>
+
+    <style name="Theme.Calculator.Green" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorBackground">#065F46</item>
+        <item name="colorDisplayBackground">#064E3B</item>
+        <item name="colorOnBackground">#10B981</item>
+        <item name="colorButtonImportant">#047857</item>
+        <item name="colorText">#000000</item>
+        <item name="colorButtonNormal">#059669</item>
+        <item name="colorNumber">#10B981</item>
+    </style>
+
+    <style name="Theme.Calculator.Cyan" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorBackground">#00838F</item>
+        <item name="colorDisplayBackground">#006064</item>
+        <item name="colorOnBackground">#80DEEA</item>
+        <item name="colorButtonImportant">#00ACC1</item>
+        <item name="colorText">#000000</item>
+        <item name="colorButtonNormal">#0097A7</item>
+        <item name="colorNumber">#80DEEA</item>
+    </style>
+
 </resources>
