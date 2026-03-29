@@ -162,7 +162,7 @@ class Calculator : AppCompatActivity() {
         }
 
         binding.btnPerse.setOnClickListener {
-            currentNumber = (currentNumber.toDouble() / 100).toString()
+            currentNumber = (fixSyntax(currentNumber).toDouble() / 100).toString()
             binding.displayText.text = currentNumber
         }
 
@@ -204,7 +204,7 @@ class Calculator : AppCompatActivity() {
     }
 
     private fun calculate() {
-        var result = currentNumber.toDouble()
+        var result = fixSyntax(currentNumber).toDouble()
 
         when (currentOperation) {
             "+" -> result += lastNumber
@@ -224,6 +224,12 @@ class Calculator : AppCompatActivity() {
         val df = DecimalFormat("#.####")
         if (result % 1 == 0.0) return result.toInt().toString()
         return df.format(result)
+    }
+
+    private fun fixSyntax(currentNumber: String): String {
+        if (currentNumber.contains(","))
+            return currentNumber.replace(",", ".")
+        return currentNumber
     }
 
     override fun onResume() {
