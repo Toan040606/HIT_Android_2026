@@ -162,11 +162,15 @@ class Calculator : AppCompatActivity() {
         }
 
         binding.btnPerse.setOnClickListener {
-            currentNumber = (fixSyntax(currentNumber).toDouble() / 100).toString()
+            currentNumber = formatResult(fixSyntax(currentNumber).toDouble() / 100)
             binding.displayText.text = currentNumber
         }
 
         binding.btnChia.setOnClickListener {
+            if (currentNumber.isEmpty()) {
+                currentOperation = "/"
+                return@setOnClickListener
+            }
             if (toggleOperation) calculate()
             lastNumber = currentNumber.toDouble()
             currentOperation = "/"
@@ -175,6 +179,10 @@ class Calculator : AppCompatActivity() {
         }
 
         binding.btnMulti.setOnClickListener {
+            if (currentNumber.isEmpty()) {
+                currentOperation = "*"
+                return@setOnClickListener
+            }
             if (toggleOperation) calculate()
             lastNumber = currentNumber.toDouble()
             currentOperation = "*"
@@ -183,6 +191,11 @@ class Calculator : AppCompatActivity() {
         }
 
         binding.btnMinus.setOnClickListener {
+            if (currentNumber.isEmpty()) {
+                currentOperation = "-"
+                return@setOnClickListener
+            }
+
             if (toggleOperation) calculate()
             lastNumber = currentNumber.toDouble()
             currentOperation = "-"
@@ -191,7 +204,14 @@ class Calculator : AppCompatActivity() {
         }
 
         binding.btnPlus.setOnClickListener {
-            if (toggleOperation) calculate()
+            if (currentNumber.isEmpty()) {
+                currentOperation = "+"
+                return@setOnClickListener
+            }
+
+            if (toggleOperation) {
+                calculate()
+            }
             lastNumber = currentNumber.toDouble()
             currentOperation = "+"
             currentNumber = ""
@@ -203,16 +223,32 @@ class Calculator : AppCompatActivity() {
         }
     }
 
+    private var temp = 0.0
     private fun calculate() {
-        var result = fixSyntax(currentNumber).toDouble()
+        var result: Double
 
-        when (currentOperation) {
-            "+" -> result += lastNumber
-            "-" -> result = lastNumber - result
-            "*" -> result *= lastNumber
-            "/" -> result = lastNumber / result
+        if (!toggleResult) {
+            val nowNumber = fixSyntax(currentNumber).toDouble()
+            temp = nowNumber
+
+            result = when (currentOperation) {
+                "+" -> lastNumber + nowNumber
+                "-" -> lastNumber - nowNumber
+                "*" -> lastNumber * nowNumber
+                "/" -> lastNumber / nowNumber
+                else -> nowNumber
+            }
+        } else {
+            result = when (currentOperation) {
+                "+" -> lastNumber + temp
+                "-" -> lastNumber - temp
+                "*" -> lastNumber * temp
+                "/" -> lastNumber / temp
+                else -> lastNumber
+            }
         }
 
+        lastNumber = result
         toggleOperation = false
         toggleResult = true
 
