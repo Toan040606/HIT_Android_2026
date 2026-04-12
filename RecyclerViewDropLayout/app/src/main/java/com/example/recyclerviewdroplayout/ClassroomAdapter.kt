@@ -45,10 +45,17 @@ class ClassroomAdapter (
                     .setDuration(100)
                     .start()
 
-                holder.arrow.animate().rotation(180f).setDuration(100).start()
+                holder.arrow.animate()
+                    .rotation(180f)
+                    .setDuration(100)
+                    .start()
             } else {
                 holder.rvChild.visibility = View.GONE
-                holder.arrow.animate().rotation(0f).setDuration(100).start()
+
+                holder.arrow.animate()
+                    .rotation(0f)
+                    .setDuration(100)
+                    .start()
             }
         }
 
