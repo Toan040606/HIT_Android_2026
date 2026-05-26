@@ -35,7 +35,6 @@ class ClassroomAdapter (
 
         holder.itemView.setOnClickListener {
             if (!holder.rvChild.isVisible) {
-                holder.rvChild.visibility = View.VISIBLE
                 holder.rvChild.translationY = -100f
                 holder.rvChild.alpha = 0f
 
@@ -44,6 +43,8 @@ class ClassroomAdapter (
                     .alpha(1f)
                     .setDuration(100)
                     .start()
+
+                holder.rvChild.visibility = View.VISIBLE
 
                 holder.arrow.animate()
                     .rotation(180f)

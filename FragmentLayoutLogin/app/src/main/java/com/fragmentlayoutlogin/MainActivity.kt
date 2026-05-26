@@ -5,8 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.fragmentlayoutlogin.databinding.ActivityMainBinding
-import com.fragmentlayoutlogin.databinding.FragmentWelcomeBinding
+import com.fragmentlayoutlogin.features.auth.ui.view.welcome.WelcomeFragment
 
 class MainActivity : AppCompatActivity() {
 

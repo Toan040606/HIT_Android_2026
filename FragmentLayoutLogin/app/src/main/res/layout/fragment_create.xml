@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateFragment">
+    tools:context=".features.auth.ui.view.signup.CreateUserFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,7 +20,8 @@
             android:src="@drawable/cream_brown_minimalist_line_art_fashion_store_logo__1__1" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/tvResult"
+            android:layout_width="327dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
             android:text="Create Account"
@@ -31,9 +32,10 @@
             android:layout_width="327dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Your Username">
+            android:hint="Username">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/usernameET"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress" />
@@ -44,9 +46,10 @@
             android:layout_width="327dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:hint="Your Email">
+            android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailET"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress" />
@@ -54,12 +57,28 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="327dp"
             android:layout_height="wrap_content"
-            android:hint="Your Password"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPasswordET"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword" />
@@ -74,6 +93,7 @@
             android:text="I accept the terms and privacy policy" />
 
         <TextView
+            android:id="@+id/signUpBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="10dp"
